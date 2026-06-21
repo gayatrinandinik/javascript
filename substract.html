@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,4 +35,42 @@
         <button id="btnAdd" onClick= "onClickAdd()">Add</button>
         <button id="btnSubtract" onClick="onClickSubstract()">Substract</button>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script>
+            var result=0
+            function onClickAdd(){
+
+                debugger;
+
+                var firstNum=Number(document.getElementById("txtFirstNum").value);
+                var secondNum=Number(document.getElementById("txtSecondNum").value);
+                result=firstNum+secondNum
+                alert(result);
+
+            }
+
+            function onClickSubstract(){
+                
+                var firstNum=Number(document.getElementById("txtFirstNum").value);
+                var secondNum=Number(document.getElementById("txtSecondNum").value);
+                result=firstNum-secondNum
+                alert(result);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1>values</h1>
+        <label id="lblNumber">First number</label>
+        <input id="txtFirstNum" type="number">
+        <label id="lblNumber">Second number</label>
+        <input id="txtSecondNum" type="number">
+        <button id="btnAdd" onClick= "onClickAdd()">Add</button>
+        <button id="btnSubtract" onClick="onClickSubstract()">Substract</button>
+    </body>
+>>>>>>> 45eaca0c4306aecc925beec57d04b2912e69ac7c
 </html>
