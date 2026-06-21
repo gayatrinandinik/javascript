@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script>
+
+<head>
+    <script>
+        var result = 0;
+
+        function onClickAdd() {
             debugger;
-            function onClickNumber(){
-                var firstNum=Number(document.getElementById("txtFirstNum").value);
-                var secondNum=Number(document.getElementById("txtSecondNum").value);
-                alert(firstNum+secondNum);
-            }
-        </script>
-    </head>
-    <body>
-        <h1>Input</h1>
-        <label id="lblNumber"> First number</label>
-        <input id="txtFirstNum" type="number">
-        <label id="lblNumber">Second number</label>
-        <input id="txtSecondNum" type="number">
-        <button id="btnNumber" onClick="onClickNumber()">Number</button>
-    </body>
+
+            var firstNum = Number(document.getElementById("txtFirstNum").value);
+            var secondNum = Number(document.getElementById("txtSecondNum").value);
+            result = firstNum + secondNum
+            alert(result);
+        }
+        function onClickSubtract() {
+            debugger;
+            var firstNum = Number(document.getElementById("txtFirstNum").value);
+            var secondNum = Number(document.getElementById("txtSecondNum").value);
+            result = firstNum - secondNum
+            alert(result);
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Input</h1>
+    <label id="lblNumber"> First number</label>
+    <input id="txtFirstNum" type="number">
+    <label id="lblNumber">Second number</label>
+    <input id="txtSecondNum" type="number">
+    <button id="btnAdd" onClick="onClickAdd()">Add</button>
+    <button id="btnSubtract" onclick="onClickSubtract()">Substract</button>
+</body>
+
 </html>
