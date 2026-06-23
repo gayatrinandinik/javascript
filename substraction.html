@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+           
+            function onClickSubstraction(){
+                var firstNum=Number(document.getElementById("txtFirstNum").value);
+                var secondNum=Number(document.getElementById("txtSecondNum").value);
+                alert(firstNum-secondNum);
+            }
+
+            function onClickSubstract(){
+                 var firstNum=Number(document.getElementById("txtFirstNum").value);
+                var secondNum=Number(document.getElementById("txtSecondNum").value);
+                alert(firstNum+secondNum);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1> Substraction</h1>
+        <label id="lblNumber"> First Number</label>
+        <input id="txtFirstNum" type="number">
+        <label id="lblNumber">Second Number</label>
+        <input id="txtSecondNum type=number">
+        <buton id="btnSubstraction" onClick="onClickSubstraction()">Substraction</buton>
+        <button id="btnSubstract" onClick="onClickSubstract()">Substract</button>
+    </body>
+</html>

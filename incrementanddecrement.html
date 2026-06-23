@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickIncr(){
+                debugger;
+                var number=Number(document.getElementById("txtNum").value);
+
+                number++;
+                alert(number);
+                alert(number+1);
+                alert(number+2);
+            }
+            function onClickDecr(){
+                debugger;
+                       var number=Number(document.getElementById("txtNum").value);
+                number--;
+                alert(number);
+                alert(number-1);
+                alert(number-2);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1>Numbers</h1>
+        <label id="lblNumber">Enter a number</label>
+        <input id="txtNum" type="number" >
+        <button id="btnIncr" onClick="onClickIncr()">increment</button>
+        <button id="btnDecr"onClick="onClickDecr()">Decrement</button>
+    </body>
+</html>

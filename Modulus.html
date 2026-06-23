@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickRemainder(){
+                debugger;
+                var result=Number(document.getElementById("txtNum").value);
+            alert(result%2);
+            alert(result%4);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Modulus</h1>
+        <label id="lblNumber">Enter a number</label>
+        <input id="txtNum" type="number">
+        <button id="btnRemainder" onclick="onClickRemainder()">Remainder</button>
+    </body>
+</html>
