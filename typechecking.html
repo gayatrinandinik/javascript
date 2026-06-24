@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickRemainder(){
+                var number=typeof(document.getElementById("txtNum").value);
+                var nan=isNaN(document.getElementById("txtNum").value);
+                alert(number);
+                alert(nan);
+            }
+        </script>
+    </head>
+    <body>
+         <h1>Type checking</h1>
+        <label id="lblNumber">Enter a number</label>
+        <input id="txtNum" type="text">
+        <button id="btnRemainder" onclick="onClickRemainder()">Remainder</button>
+    </body>
+</html>

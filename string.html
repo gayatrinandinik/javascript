@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickConversion(){
+                debugger;
+            
+            var number=Number(document.getElementById("txtNum").value);
+            var parseNumber=parseInt(document.getElementById("txtNum").value);
+            var floatNumber=parseFloat(document.getElementById("txtNum").value);
+            alert(number);
+            alert(parseNumber);
+            alert(floatNumber);
+            }
+        </script>
+    </head>
+    <body>
+          <h1>String number</h1>
+        <label id="lblNumber">Enter a number</label>
+        <input id="txtNum" type="number">
+        <button id="btnConversion" onclick="onClickConversion()">Conversion</button>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickCheckEvenOddNumber(){
+                debugger;
+                var number=Number(document.getElementById("txtNum").value);
+                if(number%2==0){
+                    alert("EvenNumber");
+                }
+                if(number%2==1){
+                    alert("OddNumber");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Even Odd number</h1>
+        <label id="lblNumber">Enter a number</label>
+        <input id="txtNum" type="number">
+        <button id="btnCheck" onClick="onClickCheckEvenOddNumber()">check</button>
+    </body>
+</html>

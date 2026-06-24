@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <script>
+                function onClickCheck(){
+                debugger;
+                var inputnumber=document.getElementById("txtNum").value;
+                if(inputnumber%5==0){
+                    alert("true");
+                }
+                if(inputnumber%5!==0){
+                    alert("false");
+                }
+            }
+            </script>
+        </head>
+        <body>
+            <h1>If modulus</h1>
+            <label id="lblNumber">Enter a number</label>
+            <input id="txtNum" type="number">
+            <button id="btnCheck" onClick="onClickCheck()">check</button>
+        </body>
+    </head>
+</html>

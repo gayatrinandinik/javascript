@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickSubmit(){
+                debugger;
+                var number=Number(document.getElementById("txtNum").value);
+                var power=Number(document.getElementById("txtPower").value);
+                result=number**power;
+                alert(result);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Exponational function</h1>
+        <label id="lblNumber">Enter a number</label>
+        <input id="txtNum" type="number"><br>
+        <label id="lblPower">Power</label>
+        <input id="txtPower" type="number"><br>
+        <button id="btnsubmit" onClick="onClickSubmit()">Submit</button>
+    </body>
+</html>
