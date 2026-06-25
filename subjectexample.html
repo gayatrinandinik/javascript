@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickTotal(){
+                debugger;
+                var Telugu=Number(document.getElementById("txtTelugu").value);
+                var Hindi=Number(document.getElementById("txtHindi").value);
+                var English=Number(document.getElementById("txtEnglish").value);
+                var Maths=Number(document.getElementById("txtMaths").value);
+                var Science=Number(document.getElementById("txtScience").value);
+                var Social=Number(document.getElementById("txtSocial").value);
+                result=Telugu+Hindi+English+Maths+Science+Social
+                alert(result);
+
+            }
+            
+            function onClickAvarage(){
+                debugger;
+                var Telugu=Number(document.getElementById("txtTelugu").value);
+                var Hindi=Number(document.getElementById("txtHindi").value);
+                var English=Number(document.getElementById("txtEnglish").value);
+                var Maths=Number(document.getElementById("txtMaths").value);
+                var Science=Number(document.getElementById("txtScience").value);
+                var Social=Number(document.getElementById("txtSocial").value);
+                result=Telugu+Hindi+English+Maths+Science+Social/6
+                alert(result);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Subjects</h1>
+        <label id="lblTelugu">Telugu</label>
+        <input id="txtTelugu" type="text"><br>
+        <label id="lblHindi">Hindi</label>
+        <input id="txtHindi" type="text"><br>  
+        <label id="lblEnglish">English</label>
+        <input id="txtEnglish" type="text"><br>
+        <label id="lblMaths">Maths</label>
+        <input id="txtMaths" type="text"><br>
+        <label id="lblScience">science</label>
+        <input id="txtScience" type="text"><br>
+        <label id="lblSocial">social</label>
+        <input id="txtSocial" type="text"><br>
+        <button id="btnTotal" onclick="onClickTotal()">Total</button>
+        <button id="btnAvarage" onclick="onClickAvarage()">Avarage</button>
+    </body>
+</html>
