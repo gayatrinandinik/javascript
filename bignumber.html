@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickCheck(){
+                debugger;
+                var a=Number(document.getElementById("txtNum1").value);
+                var b=Number(document.getElementById("txtNum2").value);
+                if(a>b){
+                    alert(a +" is the bigger");
+                }
+                if(a<b){
+                    alert(b +"is the bigger" );
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Big number</h1>
+        <label id="lblNumber1">Enter a number 1</label>
+        <input id="txtNum1" type="number">
+        <label id="lblNumber2">Enter a number 2</label>
+        <input id="txtNum2" type="number">
+        <button id="btnCheck" onClick="onClickCheck()">check</button>
+    </body>
+</html>

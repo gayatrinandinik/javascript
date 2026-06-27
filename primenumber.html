@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickCheck(){
+                debugger;
+                var number=Number(document.getElementById("txtNum").value);
+                if(number<=1){
+                    alert(number+"Not a prime number");
+                }
+                if(number==2){
+                    alert(number+"it is aprime number");
+                }
+                if(number%2==0){
+                    alert(number+"not a prime");
+                }
+                if(number%2==1){
+                    alert(number+"it is a prime");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>prime number</h1>
+        <label id="lblNumber">Enter a number</label>
+        <input id="txtNum" type="number">
+        <button id="btncheck" onClick="onClickCheck()">check</button>
+    </body>
+</html>
