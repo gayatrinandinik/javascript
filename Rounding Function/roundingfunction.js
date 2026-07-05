@@ -1,27 +1,27 @@
 function onClickRound(){
     debugger;
     var InputNumber=document.getElementById("txtNum").value;
-    var result=Round(InputNumber);
+    var result= Math.round(InputNumber);
     alert(result);
 }
 
 function onClickCeli(){
     debugger;
     var InputNumber=document.getElementById("txtNum").value;
-    var result=Ceil(InputNumber);
+    var result=Math.ceil(InputNumber);
     alert(result);
 }
 
 function onClickFloor(){
     debugger;
     var InputNumber=document.getElementById("txtNum").value;
-    var result=Floor(InputNumber);
+    var result=Math.floor(InputNumber);
     alert(result);
 }
 
 function  onClickTrunc(){
     debugger;
     var InputNumber=document.getElementById("txtNum").value;
-    var result=Trunc(InputNumber);
+    var result=Math.trunc(InputNumber);
     alert(result);
 }
