@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>slice</title>
+        <script src="Slice.js"></script>
+        <link rel="stylesheet" href="Slice.css">
+    </head>
+    <body>
+        <h1 style="text-align: center;background-color: cyan;">Flowers</h1>
+        <div class="box">
+        <label id="lblFlowers"><b>Flowers</b></label>
+        <input id="txtFlowers" type="text">
+        <br>
+        <button id="btnPush" class="container" onClick="onClickPush()">Push</button>
+        <button id="lblPop" class="display" onClick="onClickPop()">Pop</button>
+        <button id="btnUnshift" class="one" onClick="onClickUnshift()">Unshift</button>
+        <button id="btnShift"  class="two" onClick="onClickShift()">Shift</button>
+        <p id="pResult"></p>
+        </div>
+        <br>
+        <h1 style="text-align: center; background-color:pink;">Slice</h1>
+        <div class="end">
+        <label id="lblStartingNum">Starting Number</label>
+        <input id="txtStartingNum" type="text">
+        <label id="lblEndingNum">Ending Number</label>
+        <input id="txtEndingNum" type="text">
+        <br>
+        <button id="btnSubmit" class="on" onClick="onClickSlice()">Submit</button>
+        <p id="pSliceResult"></p>
+        </div>
+    </body>
+</html>
