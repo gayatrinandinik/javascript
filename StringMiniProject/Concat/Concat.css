@@ -1,0 +1,44 @@
+.box{
+    text-align: center;
+    background-color: cornflowerblue;
+    font-style: oblique;
+    padding: 30px;
+
+}
+.container{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.display{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.one{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+}
+.two{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+#btnAdd{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    margin: 0px auto;
+}
+#pResultAll{
+    text-align: center;
+}
