@@ -1,0 +1,17 @@
+.one{
+    background-color: cornflowerblue;
+    text-align: center;
+    font-style: italic;
+}
+
+.display{
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.two{
+    background-color: green;
+    color: white;
+    margin: 20px;
+}
