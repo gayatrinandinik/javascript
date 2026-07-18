@@ -1,0 +1,23 @@
+.display{
+    background-color: chartreuse;
+    text-align: center;
+    padding: 50px;
+    font-style: italic;
+}
+
+.one{
+    background-color: green;
+    color: white;
+    border: 20px;
+}
+
+.container{
+    text-align: center;
+    background-color: cornflowerblue;
+    font-style: oblique;
+}
+
+.two{
+    color: white;
+    background-color: green;
+}
