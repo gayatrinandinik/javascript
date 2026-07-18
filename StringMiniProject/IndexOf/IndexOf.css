@@ -1,0 +1,16 @@
+.one{
+    background-color: aquamarine;
+    text-align: center;
+    font-style: italic;
+}
+
+.display{
+    background-color: green;
+    color: white;
+}
+
+.two{
+    background-color: darkturquoise;
+    text-align: center;
+    font-style: inherit;
+}
