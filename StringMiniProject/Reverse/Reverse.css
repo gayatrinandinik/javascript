@@ -1,0 +1,19 @@
+.one{
+    text-align: center;
+    background-color: dodgerblue;
+    font-style: oblique;
+}
+.display{
+    background-color: green;
+    color: white;
+}
+
+.two{
+
+    display: block;
+    margin: 20px auto;
+    background-color: green;
+    color: white;
+}
+
+
