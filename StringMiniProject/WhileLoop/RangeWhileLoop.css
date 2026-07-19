@@ -1,0 +1,10 @@
+.box{
+    background-color: lightpink;
+    text-align: center;
+    font-style: italic;
+}
+
+.display{
+    background-color: green;
+    color: white;
+}
