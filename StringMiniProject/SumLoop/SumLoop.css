@@ -1,0 +1,10 @@
+.box{
+    text-align: center;
+    background-color: palevioletred;
+    font-style: initial;
+}
+.one{
+    background-color: green;
+    color: white;
+    border-radius: 70px;
+}
