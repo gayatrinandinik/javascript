@@ -1,0 +1,10 @@
+.box{
+    background-color: coral;
+    text-align: center;
+    font-style: italic;
+}
+.one{
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+}
