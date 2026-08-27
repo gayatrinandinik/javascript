@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sweet Shop</title>
+    <script src="Sweet.js"></script>
+    <link rel="stylesheet" href="sweet.css">
+    <script>
+const buttons = document.querySelectorAll(".card button");
+
+buttons.forEach(button => {
+    button.addEventListener("click", function () {
+        const card = this.parentElement;
+        const sweet = card.querySelector("h2").innerText;
+        const price = card.querySelector("p").innerText;
+
+        alert("🛒 " + sweet + " added to cart!\nPrice: " + price);
+    });
+});
+</script>
+
+<script>
+let cart = [];
+let total = 0;
+
+document.querySelectorAll(".card button").forEach(button => {
+    button.addEventListener("click", function () {
+        const card = this.parentElement;
+        const sweet = card.querySelector("h2").innerText;
+        const priceText = card.querySelector("p").innerText;
+
+        const price = parseInt(priceText.replace(/[^\d]/g, ""));
+
+        cart.push(sweet);
+        total += price;
+
+        alert(
+            sweet + " added to cart!\n\n" +
+            "Items: " + cart.length +
+            "\nTotal: ₹" + total
+        );
+    });
+});
+</script>
+ 
+</script>
+
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:30px;
+    background:#ffffff;
+    color:#222;
+    transition:0.4s;
+}
+
+/* Dark Mode */
+.dark-mode{
+    background:#1a1a1a;
+    color:white;
+}
+
+/* Top Buttons */
+.top-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+/* Dark Button */
+#darkBtn{
+    background:#333;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#darkBtn:hover{
+    background:#555;
+}
+
+/* Back Button */
+#backBtn{
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#backBtn:hover{
+    background:#e68900;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-buttons">
+    <button id="backBtn" onclick="goBack()">⬅ Back</button>
+    <button id="darkBtn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</div>
+
+
+<p>Welcome to our Sweet Shop website.</p>
+
+<script>
+function goBack(){
+    history.back();
+}
+
+function toggleDarkMode(){
+    document.body.classList.toggle("dark-mode");
+
+    let btn = document.getElementById("darkBtn");
+
+    if(document.body.classList.contains("dark-mode")){
+        btn.innerHTML = "☀️ Light Mode";
+    }else{
+        btn.innerHTML = "🌙 Dark Mode";
+    }
+}
+
+</script>
+
+</body>
+
+
+
+
+    <h1>🍬 Sweet Shop 🍬</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBZkggSXMtEgHbV80PSCV7J25WcC0AdTYDHoAOvFaq_Q&s=10" alt="Jalebi">
+            <h2>Jalebi</h2>
+            <p>₹120 / kg</p>
+            <button onclick="orderNow('Jalebi',120)">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMZkzxxZqvy5uJNgdd8fVIivr9Rb4I0AfpQWqrsZolQ&s=10" alt="Kaju Katli">
+            <h2>Kaju Katli</h2>
+            <p>₹300 / kg</p>
+            <button onclick="orderNow('Kaju Katli',300)">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjK246-iu_mpC_dw4pzC5RUS6VD4hIMgbSc1Y55T2yWw" alt="Rasgulla">
+            <h2>Rasgulla</h2>
+            <p>₹180 / kg</p>
+            <button onclick="orderNow('Rasgulla',180)">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZI8sJv8_Go96Hn3rFD6JiVIElf8mCd1i2bg2uu2E2CA&s=10" alt="Gulab Jamun">
+            <h2>Gulab Jamun</h2>
+            <p>₹200 / kg</p>
+            <button onclick="orderNow('Gulab Jamun',200)">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTAzzIW0ry82Wznf6_NmeRQQg-pO-MzsbfR8hwcrS2NQ&s=10" alt="Mysore Pak">
+            <h2>Mysore Pak</h2>
+            <p>₹250 / kg</p>
+            <button onclick="orderNow('Mysore Pak',250)">Order Now </button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS9n1o8Q9rOrO3r9yD6XJ3x0sZ5c4KQXnQmrXT5SPu7g&s=10" alt="Barfi">
+            <h2> Chocolate Barfi</h2>
+            <p>₹220 / kg</p>
+            <button onclick="orderNow('Chocolate Barfi',220)" >Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ztigmBZ4NLTseTUkzi541FdMa7_Qc1idrxv07d3Q8A&s" alt="Peda">
+            <h2>Peda</h2>
+            <p>₹150 / kg</p>
+            <button onclick="orderNow('Peda',150)">Order Now</button>
+        </div>
+        <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZYUMYP9NQQ_n0vxJN0hcUFtJKXsJLHAdPH8vSY1ynzw&s=10" alt="Laddu">
+    <h2>Boondi Laddu</h2>
+    <p>₹180 / kg</p>
+    <button onclick="orderNow('Boondi Laddu',180)">Order Now</button>
+</div>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-mLpH-MHVZCB5wc-wjU0gxz9E5OJIvlbEJg8IN5Ld5A&s=10" alt="Rasmalai">
+    <h2>Rasmalai</h2>
+    <p>₹280 / kg</p>
+    <button onclick="orderNow('Rasmalai',280)">Order Now</button>
+</div>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOXXv2h5qVSZ3HupFTYo6k9wiYHfGONZXFF9UwLLWkCA&s=10" alt="Soan Papdi">
+    <h2>Soan Papdi</h2>
+    <p>₹160 / kg</p>
+    <button onclick="orderNow('Soan Papdi',160)">Order Now</button>
+</div>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOhKO2CTtDGec-APdjhgqgEQlRqFFZRFrihJZqmkPYBQ&s=10" alt="Kalakand">
+    <h2>Kalakand</h2>
+    <p>₹260 / kg</p>
+    <button onclick="orderNow('Kalakand',260)">Order Now</button>
+</div>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPq6yX4fgvWAERR7g2N69nYJzCe8WySn8UaK5YkfCVSQ&s=10" alt="Malpua">
+    <h2>Malpua</h2>
+    <p>₹220 / kg</p>
+    <button onclick="orderNow('Malpua',220)">Order Now</button>
+</div>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1oyr98vri18MEbyYOU0B-gYj80OPgD_kDRmzGD0m8Gw&s=10" alt="Balushahi">
+    <h2>Balushahi</h2>
+    <p>₹200 / kg</p>
+    <button onclick="orderNow('Balushahi',200)">Order Now</button>
+</div>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs7EPkWE5hb5MHbLmFoGb3pyz1XYIvAk5iunA4vTnz4Q&s=10" alt="Cham Cham">
+    <h2>Cham Cham</h2>
+    <p>₹240 / kg</p>
+    <button onclick="orderNow('Cham Cham',240)">Order Now</button>
+</div>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhsMbVVFrf1qCcmWlLvi2gp7Rm2MaQeDZl3Sw6S71vQ&s" alt="Milk Cake">
+    <h2>Milk Cake</h2>
+    <p>₹250 / kg</p>
+    <button onclick="orderNow('Milk Cake',250)">Order Now</button>
+</div>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtG6smXw9Qj-klJdAu6sIOA7QENW93uQUB8kkQj2Xow&s=10" alt="Badam Halwa">
+    <h2>Badam Halwa</h2>
+    <p>₹350 / kg</p>
+    <button onclick="orderNow('Badam Halwa',350)">Order Now</button>
+</div>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1paCx9uPXKhcuEcyJ0r486T7Ss05ZgaGo-nZefhtGtA&s" alt="Coconut Barfi">
+    <h2>Coconut Barfi</h2>
+    <p>₹210 / kg</p>
+    <button onclick="orderNow('Coconut Barfi',210)">Order Now</button>
+</div>
+    </div>
+</body>
+</html>
